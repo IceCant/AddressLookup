@@ -203,10 +203,10 @@ function onCommuneChange() {
 
 function onVillageChange() {
   if (parseInt(selectedProvince.value) === 12) {
-    addressKhmer.value = `ភូមិ${currentVillages.value[selectedVillage.value].name_kh} សង្កាត់${currentCommunes.value[selectedCommune.value].name_kh}, ខណ្ឌ${currentDistricts.value[selectedDistrict.value].name_kh} ${locations.value[selectedProvince.value].name_kh}`;
+    addressKhmer.value = `ភូមិ${currentVillages.value[selectedVillage.value].name_kh} សង្កាត់${currentCommunes.value[selectedCommune.value].name_kh} ខណ្ឌ${currentDistricts.value[selectedDistrict.value].name_kh} ${locations.value[selectedProvince.value].name_kh}`;
     addressEnglish.value = `${currentVillages.value[selectedVillage.value].name_en} Village, Sangkat ${currentCommunes.value[selectedCommune.value].name_en}, Khan ${currentDistricts.value[selectedDistrict.value].name_en}, ${locations.value[selectedProvince.value].name_en} City`;
   } else {
-    addressKhmer.value = `ភូមិ${currentVillages.value[selectedVillage.value].name_kh} ឃុំ${currentCommunes.value[selectedCommune.value].name_kh}, ស្រុក${currentDistricts.value[selectedDistrict.value].name_kh} ខេត្ត${locations.value[selectedProvince.value].name_kh}`;
+    addressKhmer.value = `ភូមិ${currentVillages.value[selectedVillage.value].name_kh} ឃុំ${currentCommunes.value[selectedCommune.value].name_kh} ស្រុក${currentDistricts.value[selectedDistrict.value].name_kh} ខេត្ត${locations.value[selectedProvince.value].name_kh}`;
     addressEnglish.value = `${currentVillages.value[selectedVillage.value].name_en} Village, ${currentCommunes.value[selectedCommune.value].name_en} Commune, ${currentDistricts.value[selectedDistrict.value].name_en} District, ${locations.value[selectedProvince.value].name_en} Province`;
   }
 }
