@@ -1,8 +1,11 @@
 <template>
   <div class="min-h-screen bg-gradient-to-br from-blue-50 to-cyan-50">
     <!-- Header -->
-    <div class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-8 px-4 shadow-lg">
-      <div class="max-w-4xl mx-auto flex items-center justify-between">
+    <div
+        class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-4 sm:py-6 px-4 shadow-lg"
+    >
+
+    <div class="max-w-4xl mx-auto flex items-center justify-between">
 
         <h1 class="text-2xl sm:text-4xl font-bold text-center sm:text-left">
           Khmer Address Lookup
@@ -21,8 +24,9 @@
 
 
     <!-- Main Content -->
-    <div class="max-w-4xl mx-auto px-4 py-8 py-8 pb-20">
-      <div class="bg-white rounded-2xl shadow-xl p-8">
+    <div class="max-w-4xl mx-auto px-4 pt-28 pb-20">
+
+    <div class="bg-white rounded-2xl shadow-xl p-8">
 
         <!-- Searchable Dropdowns -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -73,8 +77,8 @@
           <h3 class="text-xl font-semibold text-gray-800 mb-4">Generated Address</h3>
 
           <!-- Khmer Address -->
-          <div v-if="addressKhmer"
-               class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg p-4 border border-blue-200">
+          <div
+              class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg p-4 border border-blue-200">
             <div class="flex items-start justify-between gap-4">
               <div class="flex-1">
                 <p class="text-sm font-medium text-gray-600 mb-1">Khmer</p>
@@ -92,10 +96,10 @@
               </button>
             </div>
           </div>
-
+          <div class="h-2"></div>
           <!-- English Address -->
-          <div v-if="addressEnglish"
-               class="bg-gradient-to-r from-cyan-50 to-blue-50 rounded-lg p-4 border border-cyan-200">
+          <div
+              class="bg-gradient-to-r from-cyan-50 to-blue-50 rounded-lg p-4 border border-cyan-200">
             <div class="flex items-start justify-between gap-4">
               <div class="flex-1">
                 <p class="text-sm font-medium text-gray-600 mb-1">English</p>
